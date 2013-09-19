@@ -1,0 +1,121 @@
+/* reset */
+
+html, body, address, blockquote, del, div, h1, h2, h3, h4, h5, h6, hr, ins, noscript, p, pre, dl, dt, dd, li, ol, ul, table, caption, colgroup, col, thead, tfoot, tbody, tr, td, th, form, button, fieldset, legend, label, /* select, */ optgroup, option, textarea, a, bdo, br, img, map, area, object, param, q, script, span, sub, sup, abbr, acronym, cite, code, del, dfn, em, ins, kbd, samp, strong, var, b, big, i, small, tt{border:0;font-family:inherit;font-size:100%;font-style:inherit;font-weight:inherit;margin:0;outline:0;padding:0;vertical-align:baseline;}
+ol, ul{list-style:none;}
+th{text-align:left;}
+table{border-collapse:collapse;}
+
+
+
+/* global */
+
+body 												{background:url(../_images/flag.jpg) #142841 no-repeat; background-size:100%; color:#333; font-family: 'Ubuntu', helvetica, sans-serif; font-size:1em; line-height:1.5;}
+a:link,
+a:visited										    {color:#235396;}
+a:hover,
+a:visited:hover									    {color:#142d50;}
+
+table td										    {}
+
+h1												    {color:#fff; font-size:4.5em; line-height:1; margin:0 0 10px 0;}
+h2												    {color:#d4220a; font-size:2em; margin:0 0 20px 0;}
+h3												    {color:#fff; font-size:2em; margin:0 0 20px 0;}
+h4												    {}
+h5												    {}
+h6												    {}
+
+p												    {}
+span												{}
+hr													{}
+label												{color:#fff;}
+input												{border-radius:3px;
+													-webkit-border-radius:3px;
+													-moz-border-radius:3px;
+													color:#333; font-family: 'Ubuntu', helvetica, sans-serif; font-size:1.25em;    
+}
+input[type=text],
+input[type=email]									{border:1px solid #ddd; margin:0 0 20px 0; padding:5px 8px; outline:none;
+													transition: all 0.25s ease-in-out;
+													-webkit-transition: all 0.25s ease-in-out;
+													-moz-transition: all 0.25s ease-in-out;
+													width:500px;
+}
+input[type=text]:focus,
+input[type=email]:focus {
+													box-shadow: 0 0 20px #8faed8;
+													-webkit-box-shadow: 0 0 20px #8faed8; 
+													-moz-box-shadow: 0 0 20px #8faed8; 
+}
+
+input[type=submit]									{background:#235396; border:0; color:#fff; cursor:pointer; font-size:1em; font-weight:bold; letter-spacing:1px; padding:10px 15px; text-transform:uppercase;
+													transition: all 0.25s ease-in-out;
+													-webkit-transition: all 0.25s ease-in-out;
+													-moz-transition: all 0.25s ease-in-out;
+}
+input[type=submit]:hover							{background:#142d50;}
+select,
+select option										{font-family: 'Ubuntu', helvetica, sans-serif; }
+textarea											{}
+
+::selection 										{}
+::-moz-selection 									{}
+
+
+
+/* container */
+
+#container											{width:100%;}
+
+
+
+/* header */
+
+/*
+#header												{background:#d4220a; border-bottom:10px solid #961d0d; padding:40px 0 45px 0; width:100%;}
+#header	h1											{color:#fff; text-align:center; text-shadow:2px 2px 4px #781407;}
+*/
+
+#header												{background:url(../_images/header-bg.png) repeat; width:100%;}
+#header-content										{margin:0 auto; padding:40px 0 25px 0; width:960px;}
+
+
+
+
+/* main */
+
+#main												{margin:0 auto; padding:40px 0; width:960px;}
+
+#registration label									{display:block; margin:0 0 5px 0;}
+
+#questions											{display:none;}
+#questions li										{display:none;}
+#questions p										{color:#fff; font-size:1.5em; margin:0 0 10px 0;}
+#questions label									{font-size:1.25em;}
+
+#q-affiliation-other								{display:none; margin:0 0 0 30px;}
+
+#thanks												{display:none;}
+
+
+
+/* responsive design css rules */
+
+@media screen and (max-width:480px) {
+body 												{}
+													}
+
+@media screen and (min-width:480px) and (max-width:800px) {
+body 												{}
+													}
+
+@media screen and (min-width:800px) and (max-width:1024px) {
+body 												{}
+													}
+
+
+
+/* misc */
+
+strong											    {font-weight:bold;}
+em													{font-style:italic;}
+.cb													{clear:both;}          

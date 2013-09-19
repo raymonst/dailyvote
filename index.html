@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="description">
+	<meta name="keywords" content="keywords">
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="_css/style.css" />
+	<script type="text/javascript" src="_js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="_js/script.js"></script>	
+	<title>Dailyvote</title>
+</head>
+
+<body>
+	
+<div id="container">
+		
+	<!-- HEADER start -->
+	<div id="header">
+		<div id="header-content">
+			<h1>DailyVote</h1>
+			<h2>A fun and meaningful new way to participate in politics—every day.</h2>
+		</div>
+	</div>
+	<!-- HEADER end -->
+				
+	<!-- MAIN start -->
+	<div id="main">	
+
+		<div id="register">		    
+		    <form id="registration" name="registration" action="registration.php" method="post">
+<!--
+			   	<input type="email" value="abc@mail.com" name="email" id="email" placeholder="Email Address" />
+			   	<br/>
+		    	<input type="text" value="john doe" name="name" id="name" placeholder="Name" />
+		    	<br/>
+-->
+				<label for="email">Your Email Address</label>
+		    	<input type="email" name="email" id="email" placeholder="name@mail.com" />
+				<label for="name">Your Name</label>
+		    	<input type="text" name="name" id="name" placeholder="John Doe" />
+				<label for="state">State</label>
+		    	<select name="state" id="state">
+		    		<option value="">Select your state</option>
+		    		<option value="AL">AL</option>
+		    		<option value="AK">AK</option>
+		    		<option value="AZ">AZ</option>
+		    		<option value="AR">AR</option>
+		    		<option value="CA">CA</option>
+		    		<option value="CO">CO</option>
+		    		<option value="CT">CT</option>
+		    		<option value="DE">DE</option>
+		    		<option value="DC">DC</option>
+		    		<option value="FL">FL</option>
+		    		<option value="GA">GA</option>
+		    		<option value="HI">HI</option>
+		    		<option value="ID">ID</option>
+		    		<option value="IL">IL</option>
+		    		<option value="IN">IN</option>
+		    		<option value="IA">IA</option>
+		    		<option value="KS">KS</option>
+		    		<option value="KY">KY</option>
+		    		<option value="LA">LA</option>
+		    		<option value="ME">ME</option>
+		    		<option value="MD">MD</option>
+		    		<option value="MA">MA</option>
+		    		<option value="MI">MI</option>
+		    		<option value="MN">MN</option>
+		    		<option value="MS">MS</option>
+		    		<option value="MO">MO</option>
+		    		<option value="MT">MT</option>
+		    		<option value="NE">NE</option>
+		    		<option value="NV">NV</option>
+		    		<option value="NH">NH</option>
+		    		<option value="NJ">NJ</option>
+		    		<option value="NM">NM</option>
+		    		<option value="NY">NY</option>
+		    		<option value="NC">NC</option>
+		    		<option value="ND">ND</option>
+		    		<option value="OH">OH</option>
+		    		<option value="OK">OK</option>
+		    		<option value="OR">OR</option>
+		    		<option value="PA">PA</option>
+		    		<option value="RI">RI</option>
+		    		<option value="SC">SC</option>
+		    		<option value="SD">SD</option>
+		    		<option value="TN">TN</option>
+		    		<option value="TX">TX</option>
+		    		<option value="UT">UT</option>
+		    		<option value="VT">VT</option>
+		    		<option value="VA">VA</option>
+		    		<option value="WA">WA</option>
+		    		<option value="WV">WV</option>
+		    		<option value="WI">WI</option>
+		    		<option value="WY">WY</option>
+		    	</select>
+		    	<br/><br/>
+		    	<input type="submit" />
+		    </form>
+		</div>
+	    
+	    <ul id="questions">
+	    	<li>
+	    		<form id="q-tester" name="q-tester" class="survey-questions" action="survey-questions.php">
+	    			<p>Would you be interested in helping us test DailyVote before it's ready to be released to the public?</p>
+	    			<input type="radio" name="tester" id="q-tester-yes-alpha" value="Yes, alpha" />
+	    			<label for="q-tester-yes-alpha">Yes, I&rsquo;d be happy to test it at any stage of development</label>
+	    			<br/>
+	    			<input type="radio" name="tester" id="q-tester-yes-beta" value="Yes, beta" />
+	    			<label for="q-tester-yes-beta">Yes, but I'd rather test DailyVote when most of its features are in place</label>
+	    			<br/>
+	    			<input type="radio" name="tester" id="q-tester-no" value="No" />
+	    			<label for="q-tester-no">No thanks. Let me know when you're ready to release DailyVote to the public</label>
+	    			<br/>
+	    			<br/>
+	    			<input type="hidden" name="email" class="email" value="" />
+	    			<input type="hidden" name="q" class="q" value="tester" />
+	    		    <input type="submit" />
+	    		</form>
+	    	</li>
+	    	<li>
+	    		<form id="q-frequency" name="q-frequency" class="survey-questions" action="survey-questions.php">
+	    			<p>How  often do you like to read about what&rsquo;s happening in politics?</p>
+	    			<input type="radio" name="frequency" id="q-frequency-01" value="More than once a day" />
+	    			<label for="q-frequency-01">More than once a day</label>
+	    			<br/>
+	    			<input type="radio" name="frequency" id="q-frequency-02" value="About once a day" />
+	    			<label for="q-frequency-02">About once a day</label>
+	    			<br/>
+	    			<input type="radio" name="frequency" id="q-frequency-03" value="A few times a week" />
+	    			<label for="q-frequency-03">A few times a week</label>
+	    			<br/>
+	    			<input type="radio" name="frequency" id="q-frequency-04" value="A few times a month" />
+	    			<label for="q-frequency-04">A few times a month</label>
+	    			<br/>
+	    			<input type="radio" name="frequency" id="q-frequency-05" value="Less frequently" />
+	    			<label for="q-frequency-05">Less frequently</label>
+	    			<br/>
+	    			<br/>
+	    			<input type="hidden" name="email" class="email" value="" />
+	    			<input type="hidden" name="q" class="q" value="frequency" />
+	    		    <input type="submit" />
+	    		</form>
+	    	</li>
+	    	<li>
+	    		<form id="q-share" name="q-share" class="survey-questions" action="survey-questions.php">
+	    			<p>How  often do you like to read about what&rsquo;s happening in politics?</p>
+	    			<input type="radio" name="share" id="q-share-01" value="More than once a day" />
+	    			<label for="q-share-01">More than once a day</label>
+	    			<br/>
+	    			<input type="radio" name="share" id="q-share-02" value="About once a day" />
+	    			<label for="q-share-02">About once a day</label>
+	    			<br/>
+	    			<input type="radio" name="share" id="q-share-03" value="A few times a week" />
+	    			<label for="q-share-03">A few times a week</label>
+	    			<br/>
+	    			<input type="radio" name="share" id="q-share-04" value="A few times a month" />
+	    			<label for="q-share-04">A few times a month</label>
+	    			<br/>
+	    			<input type="radio" name="share" id="q-share-05" value="Less frequently" />
+	    			<label for="q-share-05">Less frequently</label>
+	    			<br/>
+	    			<br/>
+	    			<input type="hidden" name="email" class="email" value="" />
+	    			<input type="hidden" name="q" class="q" value="share" />
+	    		    <input type="submit" />
+	    		</form>
+	    	</li>
+	    	<li>
+	    		<form id="q-knowledge" name="q-knowledge" class="survey-questions" action="survey-questions.php">
+	    			<p>If we asked you to name the current Vice President, Speaker of the House, and Chief Justice of the Supreme Court, would you have to look them up or do you know them by heart?</p>
+	    			<input type="radio" name="knowledge" id="q-knowledge-01" value="Have to look them all up" />
+	    			<label for="q-knowledge-01">Have to look them all up</label>
+	    			<br/>
+	    			<input type="radio" name="knowledge" id="q-knowledge-02" value="Have to look up one or two" />
+	    			<label for="q-knowledge-02">Have to look up one or two</label>
+	    			<br/>
+	    			<input type="radio" name="knowledge" id="q-knowledge-03" value="I can probably name them all" />
+	    			<label for="q-knowledge-03">I can probably name them all</label>
+	    			<br/>
+	    			<input type="radio" name="knowledge" id="q-knowledge-04" value="I can definitely name them all" />
+	    			<label for="q-knowledge-04">I can definitely name them all</label>
+	    			<br/>
+	    			<br/>
+	    			<input type="hidden" name="email" class="email" value="" />
+	    			<input type="hidden" name="q" class="q" value="knowledge" />
+	    		    <input type="submit" />
+	    		</form>
+	    	</li>
+	    	<li>
+	    		<form id="q-effort" name="q-effort" class="survey-questions" action="survey-questions.php">
+	    			<p>In general, how much of an effort do you make to understand the views of people on the opposite side of an issue from you?</p>
+	    			<input type="radio" name="effort" id="q-effort-01" value="A great deal of effort" />
+	    			<label for="q-effort-01">A great deal of effort</label>
+	    			<br/>
+	    			<input type="radio" name="effort" id="q-effort-02" value="Some effort" />
+	    			<label for="q-effort-02">Some effort</label>
+	    			<br/>
+	    			<input type="radio" name="effort" id="q-effort-03" value="A little bit of effort" />
+	    			<label for="q-effort-03">A little bit of effort</label>
+	    			<br/>
+	    			<input type="radio" name="effort" id="q-effort-04" value="Not too much effort" />
+	    			<label for="q-effort-04">Not too much effort</label>
+	    			<br/>
+	    			<br/>
+	    			<input type="hidden" name="email" class="email" value="" />
+	    			<input type="hidden" name="q" class="q" value="effort" />
+	    		    <input type="submit" />
+	    		</form>
+	    	</li>
+	    	<li>
+	    		<form id="q-affiliation" name="q-affiliation" class="survey-questions" action="survey-questions.php">
+	    			<p>Do you consider yourself a Democrat, Republican, Independent or something else?</p>
+	    			<input type="radio" name="affiliation" id="q-affiliation-01" value="Democrat" />
+	    			<label for="q-affiliation-01">Democrat</label>
+	    			<br/>
+	    			<input type="radio" name="affiliation" id="q-affiliation-02" value="Republican" />
+	    			<label for="q-affiliation-02">Republican</label>
+	    			<br/>
+	    			<input type="radio" name="affiliation" id="q-affiliation-03" value="Independent" />
+	    			<label for="q-affiliation-03">Independent</label>
+	    			<br/>
+	    			<input type="radio" name="affiliation" id="q-affiliation-04" value="Other (Green, Libertarian, etc.)" />
+	    			<label for="q-affiliation-04">Other (Green, Libertarian, etc.)</label>
+	    			<div id="q-affiliation-other">
+		    			<input type="radio" name="affiliation-other" id="q-affiliation-other-01" value="Lean Democrat" />
+		    			<label for="q-affiliation-other-01">Lean Democrat</label>
+		    			<br/>
+		    			<input type="radio" name="affiliation-other" id="q-affiliation-other-02" value="Lean Republican" />
+		    			<label for="q-affiliation-other-02">Lean Republican</label>
+		    			<br/>
+		    			<input type="radio" name="affiliation-other" id="q-affiliation-other-03" value="Right in the middle" />
+		    			<label for="q-affiliation-other-03">Right in the middle</label>
+		    			<br/>
+		    			<input type="radio" name="affiliation-other" id="q-affiliation-other-04" value="Neither, thank you" />
+		    			<label for="q-affiliation-other-04">Neither, thank you</label>
+	    			</div>
+	    			<br/>
+	    			<br/>
+	    			<input type="hidden" name="email" class="email" value="" />
+	    			<input type="hidden" name="q" class="q" value="affiliation" />
+	    		    <input type="submit" />
+	    		</form>
+	    	</li>
+	    	<li>
+	    		<form id="q-gender" name="q-gender" class="survey-questions" action="survey-questions.php">
+	    			<p>What's your gender?</p>
+	    			<input type="radio" name="gender" id="q-gender-01" value="Female" />
+	    			<label for="q-gender-01">Female</label>
+	    			<br/>
+	    			<input type="radio" name="gender" id="q-gender-02" value="Male" />
+	    			<label for="q-gender-02">Male</label>
+	    			<br/>
+	    			<input type="radio" name="gender" id="q-gender-03" value="Other" />
+	    			<label for="q-gender-03">Other</label>
+	    			<br/>
+	    			<br/>
+	    			<input type="hidden" name="email" class="email" value="" />
+	    			<input type="hidden" name="q" class="q" value="gender" />
+	    		    <input type="submit" />
+	    		</form>
+	    	</li>
+	    </ul>
+
+	    <div id="thanks">
+		    <h3>Thanks very much for your time and interest. Your answers have been recorded. We&rsquo;ll be in touch soon!</h3>
+
+	    </div>
+
+	</div>
+	<!-- MAIN end -->
+
+	<!-- FOOTER start -->	
+	<div id="footer">
+	</div>
+	<!-- FOOTER end -->	
+	
+</div>
+	
+</body>
+</html>
